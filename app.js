@@ -2,16 +2,14 @@ alert('Bem-vind@s ao jogo Adivinhe o Número!')
 let numeroSecreto= parseInt(Math.random() * numeroMaximo + 1)
 let chute;
 let tentativas = 1;
-let numeroMaximo = 100
+let numeroMaximo = 100;
 
 while (chute != numeroSecreto) {
 chute = prompt(`Digite um número entre 1 e ${numeroMaximo}`);
     if (chute == numeroSecreto ){
         break;
         
-    }else{
-    
-}
+    }
     if(chute > numeroSecreto){
         alert(`O número secreto é menor que ${chute}`);
 }
